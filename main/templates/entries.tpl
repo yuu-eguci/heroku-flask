@@ -4,6 +4,11 @@
     <title>flask demo app</title>
   </head>
   <body>
+    <form action="{{ url_for('add_entry') }}" method=post>
+      <input type="text" name="title">
+      <input type="text" name="text">
+      <input type="submit">
+    </form>
     <ul class="entries">
     {% for entry in entries %}
       <li>{{entry.title}} / {{entry.text}}</li>
