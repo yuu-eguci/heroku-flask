@@ -125,3 +125,4 @@ dmypy.json
 
 # I defined
 .vscode
+*.db
