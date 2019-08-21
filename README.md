@@ -19,5 +19,6 @@ Install from [here](https://devcenter.heroku.com/articles/heroku-cli).
 pip install pipenv
 pipenv install
 pipenv shell
+python fixture.py    # Initialize DB.
 python run.py
 ```
