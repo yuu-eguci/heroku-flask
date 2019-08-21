@@ -14,5 +14,6 @@
       <li>{{entry.title}} / {{entry.text}}</li>
     {% endfor %}
     </ul>
+    <img src="{{ url_for('static', filename='python-logo.png') }}" />
   </body>
 </html>
