@@ -1,6 +1,8 @@
-import flask
+import flask 
 from main import app
+from main.models import Entry
 
 @app.route('/')
 def show_entries():
-    return 'Hello, World!'
+    entries = Entry.query.all()
+    return flask.render_template('entries.tpl', entries=entries)
